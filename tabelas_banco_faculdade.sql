@@ -76,10 +76,9 @@ LEFT JOIN Historico ON Disciplina.iddisciplina = Historico.iddisciplina
 GROUP BY Curso.nome;
  /*Esta consulta irá listar o nome de todos os cursos e a média das notas das disciplinas de cada curso.*/
 
-6. Consulta para listar o nome de todos os cursos e a quantidade de alunos em cada curso:
+/*6. Consulta para listar o nome de todos os cursos e a quantidade de alunos em cada curso:*/
 
-sql
-Copy code
+
 SELECT Curso.nome AS NomeCurso, COUNT(AlunoCurso.idaluno) AS QuantidadeAlunos
 FROM Curso
 LEFT JOIN AlunoCurso ON Curso.idCurso = AlunoCurso.idCurso
